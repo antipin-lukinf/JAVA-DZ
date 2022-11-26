@@ -43,23 +43,6 @@ public class zadach1 {
         ,Integer.parseInt(scanner.nextLine().split(" ")[1]));}             
     }
 
-    /**
-     * @throws IOException
-     * 
-     */
-    // public static void wr() throws IOException{
-    //     // FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\antip\\Desktop\\учеба\\java\\DZ\\dz1\\output.txt");
-    //     double res = read(); 
-    //     // //String greetings = (read());
-    //     // fileOutputStream.write((double) res);
-    //     // fileOutputStream.close();
-
-    //     Writer fileOutputStream =new OutputStreamWriter(new FileOutputStream("C:\\Users\\antip\\Desktop\\учеба\\java\\DZ\\dz1\\output.txt"),
-    //     StandardCharsets.UTF_8);
-    //     fileOutputStream.write(String.valueOf(read()));
-    //     fileOutputStream.close();
-    // }
-
 }
     
 
