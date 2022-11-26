@@ -14,6 +14,7 @@
 
 package DZ.dz1;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 
@@ -24,8 +25,13 @@ public class zadach1 {
         
         double numbers = read();
         System.out.println(numbers);
-        wr();      
-    }
+        // wr();
+        Writer fileOutputStream =new OutputStreamWriter(new FileOutputStream("C:\\Users\\antip\\Desktop\\учеба\\java\\DZ\\dz1\\output.txt"),
+        StandardCharsets.UTF_8);
+        fileOutputStream.write(String.valueOf(read()));
+        fileOutputStream.close();
+    }      
+    
     
     
     
@@ -38,15 +44,21 @@ public class zadach1 {
     }
 
     /**
+     * @throws IOException
      * 
      */
-    public static void wr(){
-        FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\antip\\Desktop\\учеба\\java\\DZ\\dz1\\output.txt");
-        double res = read(); 
-        //String greetings = (read());
-        fileOutputStream.write((double) res);
-        fileOutputStream.close();
-    }
+    // public static void wr() throws IOException{
+    //     // FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\antip\\Desktop\\учеба\\java\\DZ\\dz1\\output.txt");
+    //     double res = read(); 
+    //     // //String greetings = (read());
+    //     // fileOutputStream.write((double) res);
+    //     // fileOutputStream.close();
+
+    //     Writer fileOutputStream =new OutputStreamWriter(new FileOutputStream("C:\\Users\\antip\\Desktop\\учеба\\java\\DZ\\dz1\\output.txt"),
+    //     StandardCharsets.UTF_8);
+    //     fileOutputStream.write(String.valueOf(read()));
+    //     fileOutputStream.close();
+    // }
 
 }
     
