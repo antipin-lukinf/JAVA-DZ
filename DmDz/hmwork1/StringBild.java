@@ -7,6 +7,7 @@ public class StringBild {
         for (int i=0; i < s.length(); i++) {
             bl.append(s.charAt(s.length()-1-i));          
         }
+        bl.toString();
         System.out.println(bl);
     }
     
